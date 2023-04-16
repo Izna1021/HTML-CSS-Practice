@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Personal information
+        </title>
+        <link rel="stylesheet" href="onlineform.css">
+    </head>
+    <body>
+        <header>
+            <table>
+            <h1>Online Appointment Request</h1>
+            
+            <h2>Chicago Dental 2 414 Plaza Dr Suite 200
+                Westmont II. 60559
+                Phone: 1-800-944-6646
+                Fax: 1-630-323-6240</h2>
+            </table>
+        </header>
+        <fieldset>
+            <legend>Patient Information </legend>
+        <form action="">
+            <p>First Name: * <input type="Text" name="first_name" required></p>
+            <p>Last Name: * <input type="Text" name="last_name" required></p>
+            <p>Birth Date:  <input type="date" name="birth_date" id="birth_date"> </p>
+            <p>Gender: 
+                <select name="gender" id="gender" > 
+                    <option value=""><bl>Select </bl><b></b></option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Non-binary">Non-binary</option>
+                </select>
+            </p>
+            <p>Address 1:<input type="Text" name="address1" ></p>
+            <p >Confirmation*:
+            <fieldset>
+                Phone <input type="radio" name="confirm" id="phone" required> 
+                Text <input type="radio" name="confirm" id="text" required>
+                Email <input type="radio" name="confirm" id="email" required>
+                </fieldset>
+            </p>
+        
+            <p>Address 2:<input type="Text" name="address2" ></p>
+            <p>
+                Primary Phone: * <input type="number" name="phone_number" id="phone_number" required>
+            </p>
+            <p>City: <input type="text" name="city" id="city"></p>
+            <p>
+                Cell Phone: * <input type="number" name="cell_number" id="cell_number" required>
+            </p>
+            <p>State: *
+                <select name="State" id="State" required> 
+                    <option value=""><bl>Select </bl><b></b></option>
+                    <option value="Il">IL-Illnois</option>
+                </select>
+            </p>
+            <p>Email Address: * <input type="email" name="email" id="email" required></p>
+            <p>Zip: <input type="number" name="pincode" id="pincode"></p>
+            <p>Best time to call:<input type="Text" name="timecall" required></p>
+            <p>Selecting Email or Text will allow us to automatically send you an appointment confirmation if we are able to schedule your appointment within your requested time frame.</p>
+        </form>
+    </fieldset>
+    </body> 
+</html>
