@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Personal information
+        </title>
+    </head>
+    <body>
+        <form action=""> <!--Form is self explanatory , action is for a server where data is to be stored-->
+            <h1>Payment form</h1>
+            <h2>Required fields are marked with asterisk</h2>
+            <h2>Contact information</h2>
+            <p>Name: * <input type="Text" name="name" required></p><!--input type for name can be both text or name, required is for makiong the field mandatory  -->
+            <fieldset> <!--fieldset is for a border or boundary around data-->
+                <legend>Gender * </legend><!--legend is for naming the group of data inside fieldset-->
+                <p>
+                Male <input type="radio" name="gender" id="male" required> <!--radio is for selecting one option-->
+                Female <input type="radio" name="gender" id="female" required><!--name has to be unique for different groups but same for same groups otherwise radio buttons will not work properly-->
+                Non-binary <input type="radio" name="gender" id="non-binary" required>
+                </p>
+        </fieldset>
+            <p>Address:<textarea name="Address" id="address" cols="30" rows="5"></textarea></p><!--textarea for self adjusting paragraph-->
+            <p>Email: * <input type="email" name="email" id="email" required></p> <!--input:email for vscode extension-->
+            <p>Pincode: <input type="number" name="pincode" id="pincode"></p>
+            <h2>Payment Information </h2>
+            <p>Card type: *
+                <select name="card_type" id="card_type" required> <!--select is for multiple option like drop down menu -->
+                    <option value=""><bl>Select a card type</bl><b></b></option>
+                    <option value="Rupay">Rupay</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="Visa">Visa</option>
+                </select>
+            </p>
+            <p>
+                Card Number: * <input type="number" name="card_number" id="card_number" required>
+            </p>
+            <p>Expiration Date: * <input type="date" name="exp_date" id="exp_date"required> </p>
+            <p> CVV * <input type="password" name="cvv" id="cvv" required></p>
+            <input type="submit" value="Pay Now">
+        </form>
+    </body> 
+</html>
